@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/btnHome"
+        android:title="@string/home"
+        android:icon="@drawable/instagram_home_outline_24"
+        android:enabled="true"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/btnUploadPhoto"
+        android:icon="@drawable/instagram_new_post_outline_24"
+        android:enabled="true"
+        android:title="@string/upload_photo"
+        app:showAsAction="always|withText"/>
+
+    <item
+        android:id="@+id/btnHeart"
+        android:enabled="true"
+        app:showAsAction="always|withText"
+        android:title="Heart"
+        android:icon="@drawable/ufi_heart" />
+
+    <item
+        android:id="@+id/btnUser"
+        android:enabled="true"
+        android:title="@string/user"
+        app:showAsAction="always|withText"
+        android:icon="@drawable/instagram_user_outline_24" />
+</menu>

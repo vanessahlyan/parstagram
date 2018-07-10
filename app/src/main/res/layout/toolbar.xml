@@ -18,7 +18,7 @@
         <!-- This is a centered logo -->
         <ImageView
             android:id="@+id/toolbar_logo"
-            android:src="@color/colorPrimary"
+            android:src="@drawable/nav_logo_whiteout"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
 
@@ -58,15 +58,14 @@
             style="@style/Widget.AppCompat.ActionButton" />
             -->
 
-        <!-- This is a custom right side button -->
-
+        <!-- This is a custom right side button
         <ImageButton
             android:id="@+id/btn_search"
-            android:layout_width="50dp"
-            android:layout_height="?attr/actionBarSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="end"
             android:src="@drawable/direct"
-            style="@style/Widget.AppCompat.ActionButton" />
+            style="@style/Widget.AppCompat.ActionButton" /-->
 
 
     </FrameLayout>
