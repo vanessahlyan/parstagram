@@ -47,16 +47,8 @@
         android:id="@+id/btnTakePhoto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btnLogout"
+        android:layout_below="@id/etDescription"
         android:text="Take Photo"/>
-
-
-    <Button
-        android:id="@+id/btnLogout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btnRefresh"
-        android:text="Logout" />
 
 
     <include
