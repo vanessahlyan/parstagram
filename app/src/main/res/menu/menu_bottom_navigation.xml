@@ -9,12 +9,14 @@
         android:enabled="true"
         app:showAsAction="always" />
 
+    <!--
     <item
         android:id="@+id/btnSearch"
         android:title="@string/search"
         android:icon="@drawable/search"
         android:enabled="true"
         app:showAsAction="always" />
+        -->
 
 
     <item

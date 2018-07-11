@@ -8,45 +8,38 @@
     tools:context=".MainActivity" >
 
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?actionBarSize">
+    <ImageView
+        android:id="@+id/toolbar_logo"
+        android:layout_width="222dp"
+        android:layout_height="187dp"
+        android:layout_above="@+id/etUsername"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:src="@drawable/nav_logo_whiteout" />
 
-        <ImageView
-            android:id="@+id/toolbar_logo"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_gravity="center"
-            android:layout_marginBottom="4dp"
-            android:layout_marginTop="4dp"
-            android:src="@drawable/nav_logo_whiteout" />
-
-    </android.support.v7.widget.Toolbar>
 
     <EditText
         android:id="@+id/etUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/toolbar"
+        android:layout_centerInParent="true"
         android:ems="10"
         android:hint="Username"
-        android:textColor="@color/colorPrimary"
-        android:theme="@style/TextAppearance.AppCompat"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:theme="@style/TextAppearance.AppCompat" />
+
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/etUsername"
-        android:layout_marginTop="20dp"
-        android:theme="@style/TextAppearance.AppCompat"
+        android:layout_below="@+id/etUsername"
+
+        android:layout_centerHorizontal="true"
         android:ems="10"
         android:hint="Password"
+        android:inputType="textPassword"
         android:textColor="@color/colorPrimary"
-        android:inputType="textPassword" />
+        android:theme="@style/TextAppearance.AppCompat" />
 
 
 
@@ -55,12 +48,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/etPassword"
+        android:background="@color/light_blue_500"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
         android:text="@string/login_label" />
     <Button
         android:id="@+id/btnSignUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/btnLogin"
+        android:background="@color/cyan_500"
         android:text="@string/signup_label"/>
 
 </RelativeLayout>

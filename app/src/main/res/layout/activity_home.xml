@@ -13,6 +13,17 @@
         android:layout_height="?actionBarSize">
 
         <ImageView
+            android:id="@+id/toolbar_camera"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:contentDescription="Camera"
+            android:src="@drawable/camera_shadow_fill" />
+
+
+        <ImageView
             android:id="@+id/toolbar_logo"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
