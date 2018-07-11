@@ -6,58 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
-    <include
-        android:id="@+id/toolbar"
-        layout="@layout/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        />
+
+    <ImageView
+        android:id="@+id/ivPreview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_below="@+id/toolbar"
+        app:srcCompat="@android:color/background_dark" />
 
     <TextView
-        android:id="@+id/tvRandom"
+        android:id="@+id/tvUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/toolbar"
-
-        android:text="HOME ACTIVITY"/>
-
-    <Button
-        android:id="@+id/btnCreate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="create"
-        android:layout_below="@id/etDescription" />
-
-    <Button
-        android:id="@+id/btnRefresh"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="refresh"
-        android:layout_below="@id/btnCreate" />
+        android:text="TextView"
+        android:layout_below="@id/ivPhoto" />
 
     <EditText
         android:id="@+id/etDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ivPreview"
         android:ems="10"
-        android:inputType="textMultiLine"
         android:hint="enter a description "
-        android:layout_below="@id/tvRandom" />
+        android:textColor="@color/colorPrimary"
+        android:theme="@style/TextAppearance.AppCompat"
+        android:inputType="textMultiLine" />
+
     <Button
-        android:id="@+id/btnTakePhoto"
+        android:id="@+id/btnPost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/etDescription"
-        android:text="Take Photo"/>
-
-
-    <include
-        android:id="@+id/bottom_navigation"
-        layout="@layout/bottom_navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        />
-
+        android:text="Post"
+        android:layout_below="@id/etDescription" />
 
 </RelativeLayout>

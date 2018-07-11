@@ -6,4 +6,8 @@
     <string name="upload_photo">Upload Photo</string>
     <string name="home">Home</string>
     <string name="user">User</string>
+    <string name="search">Search</string>
+    <string name="logout">Logout</string>
+    <string name="refresh">refresh</string>
+    <string name="instagram_logo">Instagram Logo</string>
 </resources>

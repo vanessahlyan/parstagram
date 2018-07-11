@@ -7,25 +7,33 @@
         android:title="@string/home"
         android:icon="@drawable/instagram_home_outline_24"
         android:enabled="true"
-        app:showAsAction="always|withText" />
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/btnSearch"
+        android:title="@string/search"
+        android:icon="@drawable/search"
+        android:enabled="true"
+        app:showAsAction="always" />
+
+
     <item
         android:id="@+id/btnUploadPhoto"
-        android:icon="@drawable/instagram_new_post_outline_24"
         android:enabled="true"
+        android:icon="@drawable/instagram_new_post_outline_24"
         android:title="@string/upload_photo"
-        app:showAsAction="always|withText"/>
+        app:showAsAction="always" />
 
     <item
         android:id="@+id/btnHeart"
         android:enabled="true"
-        app:showAsAction="always|withText"
+        android:icon="@drawable/ufi_heart"
         android:title="Heart"
-        android:icon="@drawable/ufi_heart" />
-
+        app:showAsAction="always" />
     <item
         android:id="@+id/btnUser"
         android:enabled="true"
         android:title="@string/user"
-        app:showAsAction="always|withText"
+        app:showAsAction="always"
         android:icon="@drawable/instagram_user_outline_24" />
 </menu>
