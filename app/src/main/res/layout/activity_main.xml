@@ -26,6 +26,7 @@
         android:ems="10"
         android:hint="Username"
         android:inputType="textPersonName"
+
         android:theme="@style/TextAppearance.AppCompat" />
 
     <EditText

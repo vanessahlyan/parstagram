@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/toolbar_camera"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:icon="@drawable/camera_shadow_fill">
+
+    </item>
+
+    <item
+        android:id="@+id/toolbar_logo"
+        android:layout_width="222dp"
+        android:layout_height="187dp"
+        android:layout_above="@+id/etUsername"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:src="@drawable/nav_logo_whiteout" >
+
+    </item>
+</menu>
