@@ -7,33 +7,37 @@
     android:layout_height="wrap_content"
     android:layout_marginBottom="20dp">
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/ivProfileImage"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/instagram_user_outline_24"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
 
-        app:srcCompat="@android:color/background_dark" />
+        />
 
     <TextView
         android:id="@+id/tvUsername"
-        android:layout_width="match_parent"
+        android:layout_width="349dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_toEndOf="@+id/ivProfileImage"
         android:layout_marginLeft="5dp"
+        android:layout_marginStart="7dp"
+        android:layout_toEndOf="@+id/ivProfileImage"
         android:text="Username"
-        android:textColor="@color/colorPrimary" />
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/ivPhoto"
         android:layout_width="match_parent"
-        android:layout_height="182dp"
+        android:layout_height="259dp"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/ivProfileImage"
-        android:scaleType="centerCrop"
         android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
         app:srcCompat="@android:color/background_dark" />
 
     <TextView
@@ -53,6 +57,28 @@
         android:layout_below="@+id/tvDescription"
         android:text="Time Stamp"
         android:textColor="@color/colorPrimary" />
+
+    <ImageView
+    android:id="@+id/ivComment"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_alignParentStart="true"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/tvTime"
+    app:srcCompat="@drawable/ufi_comment" />
+
+    <ImageView
+        android:id="@+id/ivFavorite"
+        android:layout_width="26dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/tvTime"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/ivComment"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/favorite_selector" />
 
 
 </RelativeLayout>

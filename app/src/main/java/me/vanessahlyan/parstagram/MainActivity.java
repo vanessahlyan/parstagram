@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         ParseUser currentUser = ParseUser.getCurrentUser();
         if (currentUser != null) {
-            // go to home activity instead
+            // go to menu_home activity instead
             Intent home = new Intent(this, HomeActivity.class);
             startActivity(home);
             finish();
