@@ -7,6 +7,14 @@
     tools:context=".HomeActivity">
 
 
+    <ProgressBar
+        android:id="@+id/pbLoadingCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etDescription"
+        android:layout_toEndOf="@+id/ivPreview"
+        android:visibility="invisible" />
+
     <ImageView
         android:id="@+id/ivPreview"
         android:layout_width="100dp"
@@ -47,18 +55,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="235dp"
-        android:layout_marginEnd="84dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="179dp"
         android:text="Take Photo" />
 
     <Button
         android:id="@+id/btnUploadPhoto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/btnTakePhoto"
-        android:layout_marginBottom="179dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btnTakePhoto"
         android:text="Upload Photo" />
 
 </RelativeLayout>
