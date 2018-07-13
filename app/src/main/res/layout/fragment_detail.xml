@@ -9,22 +9,25 @@
 
     <ImageView
         android:id="@+id/ivProfileImage"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+
 
         app:srcCompat="@android:color/background_dark" />
 
     <TextView
         android:id="@+id/tvUsername"
-        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_width="349dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_toEndOf="@+id/ivProfileImage"
         android:layout_marginLeft="5dp"
+        android:layout_marginStart="7dp"
+        android:layout_toEndOf="@+id/ivProfileImage"
         android:text="Username"
-        android:textColor="@color/colorPrimary" />
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/ivPhoto"
