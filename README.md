@@ -31,7 +31,7 @@ The following **optional** features are implemented:
 - [ ] User can comment on a post and see all comments for each post in the post details screen.
 - [x] User can like a post and see number of likes for each post in the post details screen.
 - [ ] Create a custom Camera View on your phone.
-- [ ] Run your app on your phone and use the camera to take the photo
+- [x] Run your app on your phone and use the camera to take the photo
 
 
 The following **additional** features are implemented:
@@ -40,8 +40,9 @@ The following **additional** features are implemented:
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1.
-2.
+1. follow other users and see follower/ following count
+2. Discover feature
+3. Algorithm for listing posts
 
 ## Video Walkthrough
 
