@@ -64,20 +64,11 @@
     <FrameLayout
         android:id="@+id/flContainer"
         android:layout_width="match_parent"
-        android:layout_height="410dp"
+        android:layout_height="511dp"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/toolbar">
 
     </FrameLayout>
-
-
-    <Button
-        android:id="@+id/btnLogout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/flContainer"
-        android:text="@string/logout" />
 
 
     <include

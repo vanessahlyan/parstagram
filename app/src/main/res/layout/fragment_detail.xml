@@ -58,14 +58,42 @@
         android:textColor="@color/colorPrimary" />
 
     <TextView
-        android:id="@+id/tvComments"
-        android:layout_width="match_parent"
-        android:layout_height="129dp"
+        android:id="@+id/tvLikes"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/tvTime"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/colorPrimary"
-        android:text="Comments:" />
+        android:layout_below="@id/tvTime"
+        android:layout_margin="5dp"
+        android:text="likes" />
 
+    <TextView
+        android:id="@+id/tvComments"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/tvTime"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/tvLikes"
+        android:text="comments" />
+
+    <ImageView
+        android:id="@+id/ivComment"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/tvComments"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ufi_comment" />
+
+    <ImageView
+        android:id="@+id/ivFavorite"
+        android:layout_width="26dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/tvLikes"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/ivComment"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/favorite_selector" />
 
 </RelativeLayout>
