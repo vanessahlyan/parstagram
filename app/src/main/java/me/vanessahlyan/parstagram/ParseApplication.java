@@ -44,15 +44,11 @@ public class ParseApplication extends Application {
         user.signUpInBackground(new SignUpCallback() {
             public void done(ParseException e) {
                 if (e == null) {
-                    // Hooray! Let them use the app now.
+                    // proceed to app
                 } else {
-                    // Sign up didn't succeed. Look at the ParseException
-                    // to figure out what went wrong
+                    e.printStackTrace();
                 }
             }
         });
-
-
-
     }
 }
