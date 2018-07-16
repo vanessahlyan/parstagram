@@ -28,21 +28,19 @@ public class ParseApplication extends Application {
 
 
         Parse.initialize(new Parse.Configuration.Builder(this)
-                .applicationId("parseId") // should correspond to APP_ID env variable
-                .clientKey("vanessa")  // set explicitly unless clientKey is explicitly configured on Parse server
+                .applicationId("parseId") 
+                .clientKey("vanessa")  
                 .clientBuilder(builder)
                 .server("https://parstagram-vanessahlyan.herokuapp.com/parse/").build());
 
-
-        // Create the ParseUser
         ParseUser user = new ParseUser();
-        // Set core properties
+        
         user.setUsername("v");
         user.setPassword("1");
         user.setEmail("email@example.com");
-        // Set custom properties
+        
         user.put("phone", "650-253-0000");
-        // Invoke signUpInBackground
+        
         user.signUpInBackground(new SignUpCallback() {
             public void done(ParseException e) {
                 if (e == null) {
